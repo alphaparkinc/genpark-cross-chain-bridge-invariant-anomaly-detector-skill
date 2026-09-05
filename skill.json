@@ -1,0 +1,39 @@
+{
+  "name": "genpark-cross-chain-bridge-invariant-anomaly-detector-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-chain bridge token reserve invariant auditor detecting supply discrepancy exploits and flash drain anomalies.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "crypto",
+  "tags": [
+    "cross-chain-bridge",
+    "bridge-security",
+    "invariant-monitoring",
+    "defi-exploit-defense",
+    "web3-security"
+  ],
+  "inputs": {
+    "bridge_name": {
+      "type": "string"
+    },
+    "locked_source_amount": {
+      "type": "number"
+    },
+    "minted_target_amount": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "bridge_audit_id": {
+      "type": "string"
+    },
+    "reserve_invariant_balanced": {
+      "type": "boolean"
+    },
+    "circuit_breaker_trip_recommended": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
